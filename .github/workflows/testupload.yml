@@ -10,13 +10,11 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: my-artifact
-          path: testdir
+          path: testdir/
 
 
       - run: rm -rf testdir
 
       - uses: actions/download-artifact@v3
-        with:
-          name: my-artifact
     
       - run: ls -l
