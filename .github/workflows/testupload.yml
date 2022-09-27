@@ -6,7 +6,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      -run: mkdir testdir && touch testdir/hello 
+      - run: mkdir testdir && touch testdir/hello 
       - uses: actions/upload-artifact@v3
         with:
           name: my-artifact
